@@ -1,0 +1,18 @@
+<%= form_with(model: @account, local: true) do |form| %>
+  <div class="field mb-2">
+    <%= form.label :username %>
+    <%= form.text_field :username, class: "form-control" %>
+  </div>
+  <div class="field mb-2">
+    <%= form.label :account_name %>
+    <%= form.text_field :account_name, class: "form-control" %>
+  </div>
+  <div class="field mb-2">
+    <%= form.label :password %>
+    <%= form.password_field :password, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.submit class: "btn btn-primary mr-2" %>
+    <%= link_to "Back", :back %>
+  </div>
+<% end %>

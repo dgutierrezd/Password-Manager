@@ -13,7 +13,8 @@
 ActiveRecord::Schema.define(version: 2021_10_23_150016) do
 
   create_table "accounts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "user"
+    t.string "username"
+    t.string "account_name"
     t.string "password"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
